@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ortbalsninvoicecreator.FXMLPreviewController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpenCSVExport" text="Open CSVExport.csv" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSettings" text="Settings" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="362.0">
+         <children>
+            <Label fx:id="message" prefHeight="17.0" prefWidth="425.0" text="Select CSVExport.csv file...." />
+            <Button fx:id="generateButton" mnemonicParsing="false" onAction="#handleSave" prefHeight="27.0" prefWidth="252.0" text="Generate PDF" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="designPreviewLabel" text="Layout:">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Label>
+      <ImageView fx:id="previewImageView" fitHeight="535.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </ImageView>
+   </children>
+</VBox>

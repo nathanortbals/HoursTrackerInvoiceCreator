@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ortbalsninvoicecreator.FXMLSettingsController">
+   <children>
+      <Label prefHeight="17.0" prefWidth="454.0" text="Header">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="117.0" prefWidth="446.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="117.0" prefWidth="218.0">
+               <children>
+                  <Button alignment="TOP_LEFT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#selectImage" text="Select Header Image">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Invoice Number">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="invoiceNumber" prefHeight="27.0" prefWidth="99.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fx:id="headerImage" fitHeight="105.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label prefHeight="17.0" prefWidth="454.0" text="Billing Information">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </Label>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="296.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Billing Name" />
+            <Label text="Billing Address" GridPane.rowIndex="1" />
+            <Label text="Billing State" GridPane.rowIndex="2" />
+            <Label text="Billing Email" GridPane.rowIndex="3" />
+            <Label text="Billing Phone Number" GridPane.rowIndex="4" />
+            <TextField fx:id="billingName" GridPane.columnIndex="1" />
+            <TextField fx:id="billingAddress" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="billingState" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="billingEmail" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="billingPhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin>
+      </GridPane>
+      <Label prefHeight="17.0" prefWidth="454.0" text="Contact Information">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <GridPane>
+         <children>
+            <Label text="Contact Name" />
+            <Label text="Contact Address" GridPane.rowIndex="1" />
+            <Label text="Contact State" GridPane.rowIndex="2" />
+            <Label text="Contact Email" GridPane.rowIndex="3" />
+            <Label text="Contact Phone Number" GridPane.rowIndex="4" />
+            <TextField fx:id="contactName" GridPane.columnIndex="1" />
+            <TextField fx:id="contactAddress" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="contactState" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="contactEmail" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="contactPhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="296.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin>
+      </GridPane>
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="message" prefHeight="17.0" prefWidth="178.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#backToPreview" text="Back To Preview" />
+            <Button alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#saveFields" text="Save Changes">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
