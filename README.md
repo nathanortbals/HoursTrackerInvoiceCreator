@@ -8,3 +8,6 @@ HoursTracker can be found on the Google app store [here](https://play.google.com
 
 This application makes use of Dynamic Reports, a free and open source Java reporting tool. More information can about Dynamic Reports can be found [here](http://www.dynamicreports.org/)
 
+### Example Invoice
+
+![Example Invoice](https://github.com/nathanortbals/HoursTrackerInvoiceCreator/blob/master/src/ortbalsninvoicecreator/InvoiceDesign1Preview.jpg?raw=true)
